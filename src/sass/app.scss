@@ -1,0 +1,17 @@
+@import "./resets";
+@import "./colors";
+@import "./buttons";
+@import "./aside";
+@import "./navbar";
+@import "./main";
+@import "./_logo";
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px auto;
+  grid-template-areas:
+    "logo navbar"
+    "aside main";
+}

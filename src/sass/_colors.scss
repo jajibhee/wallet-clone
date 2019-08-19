@@ -1,0 +1,15 @@
+$colors: (
+    main: #29489B,
+    accent: #F9AC19,
+    card: #15467D,
+    btn: #0DD13A,
+    text: #FFFFFF,
+    border: #707070,
+    
+    main-text: #000000
+  );
+
+@function colors($colorName) {
+    @return map-get($map: $colors, $key: $colorName);
+  }
+  

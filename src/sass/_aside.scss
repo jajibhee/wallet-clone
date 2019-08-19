@@ -1,0 +1,20 @@
+.aside {
+  grid-area: aside;
+  background-color: colors(main);
+
+  &-item {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px 10px;
+
+    &__icon {
+      padding-right: 0.5rem;
+      text-align: left;
+    }
+    &__text {
+      padding-left: 2px;
+      // color: colors(text);
+    }
+  }
+}

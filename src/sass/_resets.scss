@@ -1,0 +1,80 @@
+body,
+ul,
+li,
+aside,
+p,
+h1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.smaller-text {
+  font-size: 8px;
+}
+.incident-card {
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+.small-text {
+  font-size: 12px;
+}
+.medium-text {
+  font-size: 10px;
+}
+.large-text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.pad-top-2 {
+  padding-top: 2rem !important;
+}
+.pad-bottom-2 {
+  padding-bottom: 2rem !important;
+}
+
+.active {
+  color: colors(accent) !important;
+  text-decoration: none;
+  color: #f9ac19 !important;
+}
+.blue {
+  color: #29489b !important;
+}
+
+.grey {
+  color: #999999 !important;
+}
+
+.blue-card {
+  background-color: #29489b !important;
+  color: #fff;
+  border-radius: 15px;
+  // margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.yellow-card {
+  background-color: #f9ac19 !important;
+  color: #000;
+  border-radius: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.cargo {
+  grid-template-columns: 1fr !important;
+}
+aside {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}

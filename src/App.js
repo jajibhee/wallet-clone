@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Claim from "./pages/Claim/Claim";
+import ClaimDetail from "./pages/Claim/ClaimDetail";
+import "../src/sass/app.css";
+import Profile from "./pages/Profile";
+import Dashboard from "./pages/Dashboard";
+import Incident from "./pages/Incident";
+import Logout from "./pages/Logout";
+import Trips from "./pages/Trips";
+import TripCard from "./card/IncidentCard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Login} />
+          <Route path="/register" component={Register} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/trips" component={Trips} />
+          <Route path="/incident" component={Incident} />
+          <Route path="/claim" exact component={Claim} />
+          <Route path="/claim-detail" exact component={ClaimDetail} />
+          <Route path="/profile" exact component={Profile} />
+          <Route path="/logout" exact component={Logout} />
+        </Switch>
+      </Router>
+    );
+  }
 }
-
 export default App;
